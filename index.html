@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Line below shows an example of how to link to other resources which is importnat if using a separate CSS file.-->
+        <link rel="stylesheet" type="text/css" href="layout.css">
+    </head>
+    <body>
+        <!--These next 3 lines show how to create a sample electronic form-->
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+            <legend>Add user</legend>
+        
+            <div>
+                <!--Next few lines lines show how to prompt the user to do something like put in their first name or something.-->
+                <label style="color: rgb(12, 34, 231);" for="firstName">First name</label>
+                <input type="text" id="firstName" name="first_name">
+            </div>
+        
+            <div>
+                <label style="color: green;" for="lastName">Last name</label>
+                <input type="text" id="lastName" name="last_name">
+            </div>
+        
+            <div>
+                <label style="color: red;" for="email">Email</label>
+                <input type="email" id="email" name="email_address">
+            </div>
+        
+            <div>
+                <label style="color: rgb(144, 144, 7);"for="role">Status</label>
+                <select id="role" name="user_role_name">
+                <option style="color: aquamarine;"  value="student">Student</option>
+                <option style="color: rgba(88, 94, 6, 0.897);" value="instructor">Instructor</option>
+                <option style="color: rgba(14, 64, 228, 0.616);" value="guest">Guest</option>
+                </select>
+            </div>
+            
+            <div>
+                <p style="color: rgb(8, 130, 130);">Choose your favorite Web language:</p>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label style="color: rgb(255, 162, 0);" for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label style="color: rgb(0, 155, 150);" for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label style="color: rgb(134, 16, 117);" for="javascript">JavaScript</label>
+            </div>
+
+            <div>
+                <label style="color: blue;" for="comments">Comments</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+
+            <div>
+                <label style="color:rgb(3, 113, 23)" for="date">Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <div>
+                <input type="checkbox" id="signup" name="signup" value="Signup">
+                <label style="color: brown;" for="signup">Sign up for news letter</label><br>
+                <input type="checkbox" id="terms" name="terms" value="Terms">
+                <label style="color: blueviolet;" for="terms"> Agree to terms and conditions</label>
+            </div>
+         
+            <div>
+                <button style="color: rgb(99, 61, 5);" type="submit">Submit</button>
+            </div>
+        
+            </fieldset>
+        </form>
+    </body>
+</html>
